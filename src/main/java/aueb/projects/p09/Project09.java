@@ -11,7 +11,7 @@ public class Project09 {
         final int key = 300;
         Scanner input = new Scanner(System.in);
         boolean bool = printMenu(input);
-        System.out.printf("Διαλέξατε%sρυπτογράφηση\nΕισάγετε το ", bool? " Κ" : " Αποκ");
+        System.out.printf("Διαλέξατε%sρυπτογράφηση\n", bool? " Κ" : " Αποκ");
 
         input.nextLine();
         if (bool){
@@ -19,7 +19,7 @@ public class Project09 {
             String message = input.nextLine();
             StringBuilder mess = new StringBuilder(message);
             ArrayList<Integer> ciphed = new ArrayList<Integer>(encrypt(mess, key));
-            System.out.printf("\n\nΚρυπτογραφημένο μήνυμα:\n");
+            System.out.printf("\nΚρυπτογραφημένο μήνυμα:\n");
             System.out.println(ciphed);
             
         }
@@ -34,7 +34,7 @@ public class Project09 {
             }
 
             StringBuilder decicphed = new StringBuilder(decrypt(secret, key));
-            System.out.printf("\n\nΑποκρυπτογραφημένο μήνυμα:\n");
+            System.out.printf("\nΑποκρυπτογραφημένο μήνυμα:\n");
             System.out.println(decicphed);
         }
         
