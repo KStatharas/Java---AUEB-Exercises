@@ -26,6 +26,9 @@ public class Project10 {
                     System.out.println();
                     if (row<1 || row>30 || col<65 || col>76) System.out.println("Αυτή η θέση δεν υπάρχει. Δοκιμάστε ξανά!");
                 }
+                if ((10%2)==0){
+                    System.out.println("hi");
+                }
                 
 
             }while(row<1 || row>30 || col<65 || col>76);
